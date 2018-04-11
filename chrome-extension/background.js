@@ -3,7 +3,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     var vars = [], hash;
     var href = info.url;
     var hashes = href.slice(href.indexOf('?') + 1).split('&');
-    for(var i = 0; i < hashes.length; i++)
+    for (var i = 0; i < hashes.length; i++)
     {
         hash = hashes[i].split('=');
         vars.push(hash[0]);
@@ -11,14 +11,19 @@ chrome.webRequest.onBeforeRequest.addListener(
     }  
     newurl = "http://" + unescape(vars.q);
     if (newurl != undefined) {
-      return {redirectUrl: newurl};
+      return {
+        redirectUrl: newurl
+      };
     }
   },
+
   // filters
   {
     urls: [
-      "*://*/search?*q=*.dev*"
+      "*://*/search?*q=*.test*"
     ]
   },
+  
   // extraInfoSpec
-  ["blocking"]);
+  ["blocking"]
+);

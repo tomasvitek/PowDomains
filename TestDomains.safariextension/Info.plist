@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Matteo Zobbi</string>
+	<string>Tomas Vitek</string>
 	<key>Builder Version</key>
-	<string>8536.30.1</string>
+	<string>13605.1.33.1.2</string>
 	<key>CFBundleDisplayName</key>
-	<string>PowDomains</string>
+	<string>TestDomains</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.mapteo.powdomains</string>
+	<string>com.tomasvitek.safari.test-domains</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -27,7 +27,9 @@
 		<dict/>
 	</dict>
 	<key>Description</key>
-	<string>Intercepts Google Searches and force Safari to treat Pow .dev URLs as valid domains</string>
+	<string>Intercepts Google Searches and force Safari to treat .test URLs as valid domains</string>
+	<key>DeveloperIdentifier</key>
+	<string>0000000000</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -40,7 +42,5 @@
 			<string>All</string>
 		</dict>
 	</dict>
-	<key>Update Manifest URL</key>
-	<string>https://s3-eu-west-1.amazonaws.com/pow-domains/pow-domains-safari/PowDomains.safariextension/Info.plist</string>
 </dict>
 </plist>
